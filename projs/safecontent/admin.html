@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body onload="onInitAdmin()">
+    <h1>Welcome to the Admin Page</h1>
+
+    <button class="btn logout" onclick="onDoLogout()">Logout</button>
+    <a class="back" href="index.html">back</a>
+
+    <section class="sort">
+        <h2>Sort</h2>
+        <select onchange="onSetSort(this.value)">
+            <option value="NAME">User Name</option>
+            <option value="LOGIN">Last login time</option>
+        </select>
+
+    </section>
+
+
+
+    <div class="users-container"></div>
+
+
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/admin-service.js"></script>
+    <script src="js/admin-controller.js"></script>
+
+</body>
+
+</html>

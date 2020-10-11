@@ -1,0 +1,26 @@
+
+.sky {
+    width: 1500px;
+    height: 1500px;
+    background-color: rgb(168, 200, 238);
+}
+
+
+.balloon {
+    width: 120px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.balloon1 {
+    background-color: rgb(192, 143, 237);
+    left: 60px;
+    bottom: none; 
+}
+
+.balloon2 {
+    background-color: rgb(83, 25, 136);
+    left: 300px;
+    bottom: none; 
+}

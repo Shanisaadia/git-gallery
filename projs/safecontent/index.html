@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Content</title>
+    <link rel="stylesheet" href="css/users.css">
+</head>
+
+<body onload="onInit()">
+    <div class="welcome-admin">
+        <h1></h1>
+    </div>
+    <button class="btn logout" onclick="onDoLogout()">Logout</button>
+    <a class="admin-login" onclick="onRenderAdminPage()" href="admin.html">Visit Admin page!</a>
+
+    <div class="main-container">
+        <div class="img-container">
+            <img class="img" src="img/1.png">
+            <h2> <span>Login</span> Form</h2>
+
+        </div>
+
+        <div class="container">
+
+            <label for="uname"><b>Username</b></label>
+            <input class="user-name" type="text" placeholder="Enter username">
+            <label for="psw"><b>Password</b></label>
+            <input class="password" type="password" placeholder="Enter Password">
+
+            <button class="btn" onclick="onDoLogin()">Login</button>
+        </div>
+    </div>
+
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/user-service.js"></script>
+    <script src="js/user-controller.js"></script>
+</body>
+
+</html>

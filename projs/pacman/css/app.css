@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+  color:white;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.game-over {
+  display: none;
+  background-color: yellow;
+  color: black;
+  font-size: 1.5em;
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.restart {
+  display: none;
+  width: 120px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-size: 1.2em;
+
+}
+
+.play-again {
+  display: none;
+
+}
+
+.killGhost {
+  display: none;
+}
+
+/* .formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+} */

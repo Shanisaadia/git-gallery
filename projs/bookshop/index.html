@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>BookShop</title>
+</head>
+
+<body onload="onInit()">
+    <h1>Welcome to my bookshop</h1>
+    <section class="add-book">
+        <h2>Add new book</h2>
+        <input type="text" name="book-name" placeholder="Add book name" />
+        <input type="number" name="book-price" placeholder="Add book price" />
+        <button onclick="onAddBook()">Add</button>
+
+    </section>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th onclick="onSort('title')" >Title</th>
+                <th onclick="onSort('price')" >Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+    </table>
+
+    <section class="books-container"></section>
+
+    <div class="modal" hidden>
+        <h5></h5>
+        <h6></h6>
+        <div class="img"></div>
+
+        <form>
+            <div class="value-button" id="decrease" onclick="onDecreaseValue()" value="Decrease Value">-</div>
+            <input class="book-rate" type="number" id="number" />
+            <div class="value-button" id="increase" onclick="onIncreaseValue()" value="Increase Value">+</div>
+          </form>
+
+        <button onclick="onCloseModal()">Close</button>
+    </div>
+
+    <button onclick="onNextPage()">Next Page</button>
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controller.js"></script>
+
+</body>
+
+</html>
