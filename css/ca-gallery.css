@@ -845,3 +845,18 @@ button.btn {
     max-width: 100%;
   }
 
+.link a {
+    color: white;
+}
+
+.buttons{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+
+}
+
+.img-portfolio {
+    height: 220px;
+    width: 350px;
+}

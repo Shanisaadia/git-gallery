@@ -16,7 +16,7 @@ function renderProj() {
             <i class="fa fa-plus fa-3x"></i>
             </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/${proj.id}-thumbnail.jpg" alt="">
+            <img class="img-fluid img-portfolio" src="img/portfolio/${proj.id}-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
             <h4>${proj.name}</h4>
@@ -43,13 +43,15 @@ function renderModal(projId) {
               <li>Category: ${proj.labels[0] + ', ' + proj.labels[1]}</li>
             </ul>
 
-            <button class="btn btn-link" type="button">
+            <div class="buttons">
+            <button class="btn btn-primary link" type="button">
             <a target="_blank" href="./projs/${proj.id}/index.html">Check it out!</a>
             </button>
 
             <button class="btn btn-primary" data-dismiss="modal" type="button">
                 <i class="fa fa-times"></i>
                 Close Project</button>
+            </div>   
           </div>
           `
 
